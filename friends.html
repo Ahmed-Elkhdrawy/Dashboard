@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard</title>
+        <link rel="shortcut icon" href="imgs/favicon.svg" type="image/x-icon">
+        <link rel="icon" type="image/png" href="">
+        <!-- Normalize -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="css/all.min.css">
+        <!-- Start Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin="crossorigin">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;500;700;900;1000&family=Montserrat:wght@300;400;700;900&family=Nunito:wght@300;400;700;900&family=Roboto:wght@100;300;400;500;700;900&family=Yellowtail&display=swap"
+            rel="stylesheet">
+        <!-- End Google Fonts -->
+        <link rel="stylesheet" href="css/framework.css">
+        <link rel="stylesheet" href="css/master.css">
+    </head>
+    <body>
+        <!-- Start Page -->
+        <div class="page ds-flex">
+            <!-- Start Sidebar -->
+            <div class="sidebar h-100vh p-20 pos-sticky top-0 colr-whit bg-grad-135">
+                <div class="user-name col-flex txt-c">
+                    <a class="cntr-flex" href="index.html">
+                        <img class="borad-half" src="imgs/user-logo.png" alt="">
+                    </a>
+                    <h3 class="name m-0 mt-20 mb-5 pos-relative hid-mob">Ahmed</h3>
+                    <span class="u-name fz-12 hid-mob">@aelkhdrawy</span>
+                </div>
+                <ul>
+                    <li>
+                        <a class="ds-flex align-c fz-14 borad-6 p-10" href="index.html">
+                            <i class="fa-solid fa-square-poll-horizontal"></i>
+                            <span class="hid-mob">Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="ds-flex align-c fz-14 borad-6 p-10" href="profile.html">
+                            <i class="fa-solid fa-user"></i>
+                            <span class="hid-mob">Profile</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="ds-flex align-c fz-14 borad-6 p-10" href="settings.html">
+                            <i class="fa-solid fa-gear"></i>
+                            <span class="hid-mob">Settings</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="ds-flex align-c fz-14 borad-6 p-10" href="projects.html">
+                            <i class="fa-solid fa-diagram-project"></i>
+                            <span class="hid-mob">Projects</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="ds-flex align-c fz-14 borad-6 p-10" href="courses.html">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <span class="hid-mob">Courses</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="active ds-flex align-c fz-14 borad-6 p-10" href="friends.html">
+                            <i class="fa-solid fa-circle-user"></i>
+                            <span class="hid-mob">Friends</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="ds-flex align-c fz-14 borad-6 p-10" href="files.html">
+                            <i class="fa-solid fa-file"></i>
+                            <span class="hid-mob">Files</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="ds-flex align-c fz-14 borad-6 p-10" href="plans.html">
+                            <i class="fa-solid fa-credit-card"></i>
+                            <span class="hid-mob">Plans</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- End Sidebar -->
+            <!-- Start Content -->
+            <div class="content w-full bg-gl-2 over-hid">
+                <!-- Start Head -->
+                <div class="head bg-gl-2 p-15 betwn-flex pos-relative label-shdw">
+                    <div class="search pos-relative">
+                        <input
+                            class="p-10  colr-prim bg-gl-1  pl-30 ml-5 borad-10 inpt-reset label-shdw inpt-fcs-shdw"
+                            type="search"
+                            name="search"
+                            placeholder="Type A Keyword">
+                    </div>
+                    <div class="icons ds-flex align-c">
+                        <span class="pos-relative notifi colr-prim-drk">
+                            <i class="fa-regular fa-bell fa-lg bell"></i>
+                        </span>
+                        <img class="ml-15" src="imgs/user-logo.png" alt="">
+                    </div>
+                </div>
+                <!-- End Head -->
+                <!-- Page Main Heading -->
+                <h1 class="pos-relative">Friends<span class="fw-bold colr-prim-drk">.</span></h1>
+                <!-- Start Friends Wrapper -->
+                <div class="friends-wrapper ds-grid gap-30 m-20">
+                    <!-- Start Add Friend Widget -->
+                    <div class="add-friend p-20 borad-10 bg-gl-1 bx-shdw col-flex ">
+                        <h3 class="colr-prim-drk mt-0 mb-20 fw-norm">Add New Friend</h3>
+                        <i
+                            class="fa-solid fa-user-plus colr-gdrk bg-gl-1 label-shdw mb-30 borad-half cntr-flex fz-25 w-100 h-100"></i>
+                        <input class="inpt-reset fz-14 ds-blk borad-6 p-10 mb-20 bg-gl-1 inset-shdw" type="text" name="name" id="" placeholder="Friend's Name">
+                        <input
+                            class="inpt-reset fz-14 ds-blk borad-6 p-10 mb-20 bg-gl-1 inset-shdw" type="email" name="email" id="" placeholder="Friend's Emial" value="f_ac@mail.com">
+                        <input
+                            class="inpt-reset ds-blk btn-prim p-10 w-half borad-20 bg-grad-right label-shdw" type="submit" value="Add">
+                    </div>
+                    <!-- End Add Friend Widget -->
+                    <!-- Start Friend Widget -->
+                    <div class="friend p-20 borad-10 bg-gl-1 pos-relative bx-shdw">
+                        <div class="contact colr-gdrk pos-absolute">
+                            <i class="fa-solid fa-fire p-10 borad-half bg-gl-1 label-shdw fz-12"></i>
+                            <i class="fa-solid fa-paper-plane p-10 borad-half bg-gl-1 label-shdw fz-12"></i>
+                        </div>
+                        <div class="friend-info txt-c">
+                            <img
+                                class="borad-half mt-30 mb-15 w-100 h-100 label-shdw"
+                                src="imgs/team-05.png"
+                                alt="">
+                            <h4 class="m-0 colr-prim-drk">Ahmed Elkhdrawy</h4>
+                            <p class="fz-13 mt-5 mb-0 colr-gdrk">Front-end Designer</p>
+                        </div>
+                        <div class="friend-activity bordt-gry-1 bordb-gry-1 mt-20 mb-20 pt-15 pb-15 colr-gdrk fz-14">
+                            <div class="mb-10">
+                                <i class="fa-solid fa-face-smile-wink fz-18 mr-10 colr-prim"></i>
+                                <span>120 Friends</span>
+                            </div>
+                            <div class="mb-10">
+                                <i class="fa-brands fa-redhat fz-18 mr-10 colr-prim"></i>
+                                <span>10 Projects</span>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-paperclip fz-18 mr-10 colr-prim"></i>
+                                <span>50 Articles</span>
+                            </div>
+                        </div>
+                        <div class="action-tfriend betwn-flex fz-13">
+                            <span class="colr-prim">Joined 02 / 10 / 2021</span>
+                            <a
+                                class="btn-prim w-fit gap-10 pt-10 pb-10 pr-15 pl-15 borad-20 bg-prim-blu betwn-flex label-shdw"
+                                href="profile.html">
+                                <i class="fa-regular fa-eye"></i>
+                                <span>View</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- End Friend Widget -->
+                    <!-- Start Friend Widget -->
+                    <div class="friend p-20 borad-10 bg-gl-1 pos-relative bx-shdw">
+                        <div class="contact colr-gdrk pos-absolute">
+                            <i class="fa-solid fa-fire p-10 borad-half bg-gl-1 label-shdw fz-12"></i>
+                            <i class="fa-solid fa-paper-plane p-10 borad-half bg-gl-1 label-shdw fz-12"></i>
+                        </div>
+                        <div class="friend-info txt-c">
+                            <img
+                                class="borad-half mt-30 mb-15 w-100 h-100 label-shdw"
+                                src="imgs/team-01.png"
+                                alt="">
+                            <h4 class="m-0 colr-prim-drk">John Doe</h4>
+                            <p class="fz-13 mt-5 mb-0 colr-gdrk">Front-end Developer</p>
+                        </div>
+                        <div class="friend-activity bordt-gry-1 bordb-gry-1 mt-20 mb-20 pt-15 pb-15 colr-gdrk fz-14">
+                            <div class="mb-10">
+                                <i class="fa-solid fa-face-smile-wink fz-18 mr-10 colr-prim"></i>
+                                <span>120 Friends</span>
+                            </div>
+                            <div class="mb-10">
+                                <i class="fa-brands fa-redhat fz-18 mr-10 colr-prim"></i>
+                                <span>10 Projects</span>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-paperclip fz-18 mr-10 colr-prim"></i>
+                                <span>50 Articles</span>
+                            </div>
+                        </div>
+                        <div class="action-tfriend betwn-flex fz-13">
+                            <span class="colr-prim">Joined 02 / 10 / 2021</span>
+                            <a
+                                class="btn-prim w-fit gap-10 pt-10 pb-10 pr-15 pl-15 borad-20 bg-prim-blu betwn-flex label-shdw"
+                                href="profile.html">
+                                <i class="fa-regular fa-eye"></i>
+                                <span>View</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- End Friend Widget -->
+                    <!-- Start Friend Widget -->
+                    <div class="friend p-20 borad-10 bg-gl-1 pos-relative bx-shdw">
+                        <div class="contact colr-gdrk pos-absolute">
+                            <i class="fa-solid fa-fire p-10 borad-half bg-gl-1 label-shdw fz-12"></i>
+                            <i class="fa-solid fa-paper-plane p-10 borad-half bg-gl-1 label-shdw fz-12"></i>
+                        </div>
+                        <div class="friend-info txt-c">
+                            <img
+                                class="borad-half mt-30 mb-15 w-100 h-100 label-shdw"
+                                src="imgs/team-03.png"
+                                alt="">
+                            <h4 class="m-0 colr-prim-drk">Joe Blow</h4>
+                            <p class="fz-13 mt-5 mb-0 colr-gdrk">JavaScript Developer</p>
+                        </div>
+                        <div class="friend-activity bordt-gry-1 bordb-gry-1 mt-20 mb-20 pt-15 pb-15 colr-gdrk fz-14">
+                            <div class="mb-10">
+                                <i class="fa-solid fa-face-smile-wink fz-18 mr-10 colr-prim"></i>
+                                <span>120 Friends</span>
+                            </div>
+                            <div class="mb-10">
+                                <i class="fa-brands fa-redhat fz-18 mr-10 colr-prim"></i>
+                                <span>10 Projects</span>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-paperclip fz-18 mr-10 colr-prim"></i>
+                                <span>50 Articles</span>
+                            </div>
+                        </div>
+                        <div class="action-tfriend betwn-flex fz-13">
+                            <span class="colr-prim">Joined 02 / 10 / 2021</span>
+                            <a
+                                class="btn-prim w-fit gap-10 pt-10 pb-10 pr-15 pl-15 borad-20 bg-prim-blu betwn-flex label-shdw"
+                                href="profile.html">
+                                <i class="fa-regular fa-eye"></i>
+                                <span>View</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- End Friend Widget -->
+                    <!-- Start Friend Widget -->
+                    <div class="friend p-20 borad-10 bg-gl-1 pos-relative bx-shdw">
+                        <div class="contact colr-gdrk pos-absolute">
+                            <i class="fa-solid fa-fire p-10 borad-half bg-gl-1 label-shdw fz-12"></i>
+                            <i class="fa-solid fa-paper-plane p-10 borad-half bg-gl-1 label-shdw fz-12"></i>
+                        </div>
+                        <div class="friend-info txt-c">
+                            <img
+                                class="borad-half mt-30 mb-15 w-100 h-100 label-shdw"
+                                src="imgs/team-04.png"
+                                alt="">
+                            <h4 class="m-0 colr-prim-drk">little man</h4>
+                            <p class="fz-13 mt-5 mb-0 colr-gdrk">Back-end Developer</p>
+                        </div>
+                        <div class="friend-activity bordt-gry-1 bordb-gry-1 mt-20 mb-20 pt-15 pb-15 colr-gdrk fz-14">
+                            <div class="mb-10">
+                                <i class="fa-solid fa-face-smile-wink fz-18 mr-10 colr-prim"></i>
+                                <span>120 Friends</span>
+                            </div>
+                            <div class="mb-10">
+                                <i class="fa-brands fa-redhat fz-18 mr-10 colr-prim"></i>
+                                <span>10 Projects</span>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-paperclip fz-18 mr-10 colr-prim"></i>
+                                <span>50 Articles</span>
+                            </div>
+                        </div>
+                        <div class="action-tfriend betwn-flex fz-13">
+                            <span class="colr-prim">Joined 02 / 10 / 2021</span>
+                            <a
+                                class="btn-prim w-fit gap-10 pt-10 pb-10 pr-15 pl-15 borad-20 bg-prim-blu betwn-flex label-shdw"
+                                href="profile.html">
+                                <i class="fa-regular fa-eye"></i>
+                                <span>View</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- End Friend Widget -->
+                    <!-- Start Friend Widget -->
+                    <div class="friend p-20 borad-10 bg-gl-1 pos-relative bx-shdw">
+                        <div class="contact colr-gdrk pos-absolute">
+                            <i class="fa-solid fa-fire p-10 borad-half bg-gl-1 label-shdw fz-12"></i>
+                            <i class="fa-solid fa-paper-plane p-10 borad-half bg-gl-1 label-shdw fz-12"></i>
+                        </div>
+                        <div class="friend-info txt-c">
+                            <img
+                                class="borad-half mt-30 mb-15 w-100 h-100 label-shdw"
+                                src="imgs/team-02.png"
+                                alt="">
+                            <h4 class="m-0 colr-prim-drk">little guy</h4>
+                            <p class="fz-13 mt-5 mb-0 colr-gdrk">PHP Developer</p>
+                        </div>
+                        <div class="friend-activity bordt-gry-1 bordb-gry-1 mt-20 mb-20 pt-15 pb-15 colr-gdrk fz-14">
+                            <div class="mb-10">
+                                <i class="fa-solid fa-face-smile-wink fz-18 mr-10 colr-prim"></i>
+                                <span>120 Friends</span>
+                            </div>
+                            <div class="mb-10">
+                                <i class="fa-brands fa-redhat fz-18 mr-10 colr-prim"></i>
+                                <span>10 Projects</span>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-paperclip fz-18 mr-10 colr-prim"></i>
+                                <span>50 Articles</span>
+                            </div>
+                        </div>
+                        <div class="action-tfriend betwn-flex fz-13">
+                            <span class="colr-prim">Joined 02 / 10 / 2021</span>
+                            <a
+                                class="btn-prim w-fit gap-10 pt-10 pb-10 pr-15 pl-15 borad-20 bg-prim-blu betwn-flex label-shdw"
+                                href="profile.html">
+                                <i class="fa-regular fa-eye"></i>
+                                <span>View</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- End Friend Widget -->
+                    <!-- Start Friend Widget -->
+                    <div class="friend p-20 borad-10 bg-gl-1 pos-relative bx-shdw">
+                        <div class="contact colr-gdrk pos-absolute">
+                            <i class="fa-solid fa-fire p-10 borad-half bg-gl-1 label-shdw fz-12"></i>
+                            <i class="fa-solid fa-paper-plane p-10 borad-half bg-gl-1 label-shdw fz-12"></i>
+                        </div>
+                        <div class="friend-info txt-c">
+                            <img
+                                class="borad-half mt-30 mb-15 w-100 h-100 label-shdw"
+                                src="imgs/team-05.png"
+                                alt="">
+                            <h4 class="m-0 colr-prim-drk">Ahmed Elkhdrawy</h4>
+                            <p class="fz-13 mt-5 mb-0 colr-gdrk">Front-end Designer</p>
+                        </div>
+                        <div class="friend-activity bordt-gry-1 bordb-gry-1 mt-20 mb-20 pt-15 pb-15 colr-gdrk fz-14">
+                            <div class="mb-10">
+                                <i class="fa-solid fa-face-smile-wink fz-18 mr-10 colr-prim"></i>
+                                <span>120 Friends</span>
+                            </div>
+                            <div class="mb-10">
+                                <i class="fa-brands fa-redhat fz-18 mr-10 colr-prim"></i>
+                                <span>10 Projects</span>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-paperclip fz-18 mr-10 colr-prim"></i>
+                                <span>50 Articles</span>
+                            </div>
+                        </div>
+                        <div class="action-tfriend betwn-flex fz-13">
+                            <span class="colr-prim">Joined 02 / 10 / 2021</span>
+                            <a
+                                class="btn-prim w-fit gap-10 pt-10 pb-10 pr-15 pl-15 borad-20 bg-prim-blu betwn-flex label-shdw"
+                                href="profile.html">
+                                <i class="fa-regular fa-eye"></i>
+                                <span>View</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- End Friend Widget -->
+                    <!-- Start Friend Widget -->
+                    <div class="friend p-20 borad-10 bg-gl-1 pos-relative bx-shdw">
+                        <div class="contact colr-gdrk pos-absolute">
+                            <i class="fa-solid fa-fire p-10 borad-half bg-gl-1 label-shdw fz-12"></i>
+                            <i class="fa-solid fa-paper-plane p-10 borad-half bg-gl-1 label-shdw fz-12"></i>
+                        </div>
+                        <div class="friend-info txt-c">
+                            <img
+                                class="borad-half mt-30 mb-15 w-100 h-100 label-shdw"
+                                src="imgs/team-01.png"
+                                alt="">
+                            <h4 class="m-0 colr-prim-drk">John Doe</h4>
+                            <p class="fz-13 mt-5 mb-0 colr-gdrk">Front-end Developer</p>
+                        </div>
+                        <div class="friend-activity bordt-gry-1 bordb-gry-1 mt-20 mb-20 pt-15 pb-15 colr-gdrk fz-14">
+                            <div class="mb-10">
+                                <i class="fa-solid fa-face-smile-wink fz-18 mr-10 colr-prim"></i>
+                                <span>120 Friends</span>
+                            </div>
+                            <div class="mb-10">
+                                <i class="fa-brands fa-redhat fz-18 mr-10 colr-prim"></i>
+                                <span>10 Projects</span>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-paperclip fz-18 mr-10 colr-prim"></i>
+                                <span>50 Articles</span>
+                            </div>
+                        </div>
+                        <div class="action-tfriend betwn-flex fz-13">
+                            <span class="colr-prim">Joined 02 / 10 / 2021</span>
+                            <a
+                                class="btn-prim w-fit gap-10 pt-10 pb-10 pr-15 pl-15 borad-20 bg-prim-blu betwn-flex label-shdw"
+                                href="profile.html">
+                                <i class="fa-regular fa-eye"></i>
+                                <span>View</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- End Friend Widget -->
+                    <!-- Start Friend Widget -->
+                    <div class="friend p-20 borad-10 bg-gl-1 pos-relative bx-shdw">
+                        <div class="contact colr-gdrk pos-absolute">
+                            <i class="fa-solid fa-fire p-10 borad-half bg-gl-1 label-shdw fz-12"></i>
+                            <i class="fa-solid fa-paper-plane p-10 borad-half bg-gl-1 label-shdw fz-12"></i>
+                        </div>
+                        <div class="friend-info txt-c">
+                            <img
+                                class="borad-half mt-30 mb-15 w-100 h-100 label-shdw"
+                                src="imgs/team-03.png"
+                                alt="">
+                            <h4 class="m-0 colr-prim-drk">Joe Blow</h4>
+                            <p class="fz-13 mt-5 mb-0 colr-gdrk">JavaScript Developer</p>
+                        </div>
+                        <div class="friend-activity bordt-gry-1 bordb-gry-1 mt-20 mb-20 pt-15 pb-15 colr-gdrk fz-14">
+                            <div class="mb-10">
+                                <i class="fa-solid fa-face-smile-wink fz-18 mr-10 colr-prim"></i>
+                                <span>120 Friends</span>
+                            </div>
+                            <div class="mb-10">
+                                <i class="fa-brands fa-redhat fz-18 mr-10 colr-prim"></i>
+                                <span>10 Projects</span>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-paperclip fz-18 mr-10 colr-prim"></i>
+                                <span>50 Articles</span>
+                            </div>
+                        </div>
+                        <div class="action-tfriend betwn-flex fz-13">
+                            <span class="colr-prim">Joined 02 / 10 / 2021</span>
+                            <a
+                                class="btn-prim w-fit gap-10 pt-10 pb-10 pr-15 pl-15 borad-20 bg-prim-blu betwn-flex label-shdw"
+                                href="profile.html">
+                                <i class="fa-regular fa-eye"></i>
+                                <span>View</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- End Friend Widget -->
+                    <!-- Start Friend Widget -->
+                    <div class="friend p-20 borad-10 bg-gl-1 pos-relative bx-shdw">
+                        <div class="contact colr-gdrk pos-absolute">
+                            <i class="fa-solid fa-fire p-10 borad-half bg-gl-1 label-shdw fz-12"></i>
+                            <i class="fa-solid fa-paper-plane p-10 borad-half bg-gl-1 label-shdw fz-12"></i>
+                        </div>
+                        <div class="friend-info txt-c">
+                            <img
+                                class="borad-half mt-30 mb-15 w-100 h-100 label-shdw"
+                                src="imgs/team-04.png"
+                                alt="">
+                            <h4 class="m-0 colr-prim-drk">little man</h4>
+                            <p class="fz-13 mt-5 mb-0 colr-gdrk">Back-end Developer</p>
+                        </div>
+                        <div class="friend-activity bordt-gry-1 bordb-gry-1 mt-20 mb-20 pt-15 pb-15 colr-gdrk fz-14">
+                            <div class="mb-10">
+                                <i class="fa-solid fa-face-smile-wink fz-18 mr-10 colr-prim"></i>
+                                <span>120 Friends</span>
+                            </div>
+                            <div class="mb-10">
+                                <i class="fa-brands fa-redhat fz-18 mr-10 colr-prim"></i>
+                                <span>10 Projects</span>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-paperclip fz-18 mr-10 colr-prim"></i>
+                                <span>50 Articles</span>
+                            </div>
+                        </div>
+                        <div class="action-tfriend betwn-flex fz-13">
+                            <span class="colr-prim">Joined 02 / 10 / 2021</span>
+                            <a
+                                class="btn-prim w-fit gap-10 pt-10 pb-10 pr-15 pl-15 borad-20 bg-prim-blu betwn-flex label-shdw"
+                                href="profile.html">
+                                <i class="fa-regular fa-eye"></i>
+                                <span>View</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- End Friend Widget -->
+                    <!-- Start Friend Widget -->
+                    <div class="friend p-20 borad-10 bg-gl-1 pos-relative bx-shdw">
+                        <div class="contact colr-gdrk pos-absolute">
+                            <i class="fa-solid fa-fire p-10 borad-half bg-gl-1 label-shdw fz-12"></i>
+                            <i class="fa-solid fa-paper-plane p-10 borad-half bg-gl-1 label-shdw fz-12"></i>
+                        </div>
+                        <div class="friend-info txt-c">
+                            <img
+                                class="borad-half mt-30 mb-15 w-100 h-100 label-shdw"
+                                src="imgs/team-02.png"
+                                alt="">
+                            <h4 class="m-0 colr-prim-drk">little guy</h4>
+                            <p class="fz-13 mt-5 mb-0 colr-gdrk">PHP Developer</p>
+                        </div>
+                        <div class="friend-activity bordt-gry-1 bordb-gry-1 mt-20 mb-20 pt-15 pb-15 colr-gdrk fz-14">
+                            <div class="mb-10">
+                                <i class="fa-solid fa-face-smile-wink fz-18 mr-10 colr-prim"></i>
+                                <span>120 Friends</span>
+                            </div>
+                            <div class="mb-10">
+                                <i class="fa-brands fa-redhat fz-18 mr-10 colr-prim"></i>
+                                <span>10 Projects</span>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-paperclip fz-18 mr-10 colr-prim"></i>
+                                <span>50 Articles</span>
+                            </div>
+                        </div>
+                        <div class="action-tfriend betwn-flex fz-13">
+                            <span class="colr-prim">Joined 02 / 10 / 2021</span>
+                            <a
+                                class="btn-prim w-fit gap-10 pt-10 pb-10 pr-15 pl-15 borad-20 bg-prim-blu betwn-flex label-shdw"
+                                href="profile.html">
+                                <i class="fa-regular fa-eye"></i>
+                                <span>View</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- End Friend Widget -->
+                </div>
+                <!-- End Friends Wrapper -->
+            </div>
+            <!-- End Content -->
+        </div>
+        <!-- End Page -->
+    </body>
+</html>

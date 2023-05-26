@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard</title>
+        <link rel="shortcut icon" href="imgs/favicon.svg" type="image/x-icon">
+        <link rel="icon" type="image/png" href="">
+        <!-- Normalize -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="css/all.min.css">
+        <!-- Start Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin="crossorigin">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;500;700;900;1000&family=Montserrat:wght@300;400;700;900&family=Nunito:wght@300;400;700;900&family=Roboto:wght@100;300;400;500;700;900&family=Yellowtail&display=swap"
+            rel="stylesheet">
+            <!-- End Google Fonts -->
+        <link rel="stylesheet" href="css/framework.css">
+        <link rel="stylesheet" href="css/master.css">
+    </head>
+    <body>
+        <!-- Start Page -->
+        <div class="page ds-flex">
+            <!-- Start Sidebar -->
+            <div class="sidebar h-100vh p-20 pos-sticky top-0 colr-whit bg-grad-135">
+                <div class="user-name col-flex txt-c">
+                    <a class="cntr-flex" href="index.html">
+                        <img class="borad-half" src="imgs/user-logo.png" alt="">
+                    </a>
+                    <h3 class="name m-0 mt-20 mb-5 pos-relative hid-mob">Ahmed</h3>
+                    <span class="u-name fz-12 hid-mob">@aelkhdrawy</span>
+                </div>
+                <ul>
+                    <li>
+                        <a class="ds-flex align-c fz-14 borad-6 p-10" href="index.html">
+                        <i class="fa-solid fa-square-poll-horizontal"></i>
+                        <span class="hid-mob">Dashboard</span>
+                    </a>
+                    </li>
+                    <li>
+                        <a class="active ds-flex align-c fz-14 borad-6 p-10" href="profile.html">
+                         <i class="fa-solid fa-user"></i>
+                        <span class="hid-mob">Profile</span>
+                    </a>
+                    </li>
+                    <li>
+                        <a class="ds-flex align-c fz-14 borad-6 p-10" href="settings.html">
+                        <i class="fa-solid fa-gear"></i>
+                        <span class="hid-mob">Settings</span>
+                    </a>
+                    </li>
+                    <li>
+                        <a class="ds-flex align-c fz-14 borad-6 p-10" href="projects.html">
+                        <i class="fa-solid fa-diagram-project"></i>
+                        <span class="hid-mob">Projects</span>
+                    </a>
+                    </li>
+                    <li>
+                        <a class="ds-flex align-c fz-14 borad-6 p-10" href="courses.html">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <span class="hid-mob">Courses</span>
+                    </a>
+                    </li>
+                    <li>
+                        <a class="ds-flex align-c fz-14 borad-6 p-10" href="friends.html">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <span class="hid-mob">Friends</span>
+                    </a>
+                    </li>
+                    <li>
+                        <a class="ds-flex align-c fz-14 borad-6 p-10" href="files.html">
+                        <i class="fa-solid fa-file"></i>
+                        <span class="hid-mob">Files</span>
+                    </a>
+                    </li>
+                    <li>
+                        <a class="ds-flex align-c fz-14 borad-6 p-10" href="plans.html">
+                        <i class="fa-solid fa-credit-card"></i>
+                        <span class="hid-mob">Plans</span>
+                    </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- End Sidebar -->
+            <!-- Start Content -->
+            <div class="content w-full bg-gl-2 over-hid">
+                <!-- Start Head -->
+                <div class="head bg-gl-2 p-15 betwn-flex pos-relative label-shdw">
+                    <div class="search pos-relative">
+                        <input class="p-10 colr-prim bg-gl-1  pl-30 ml-5  borad-10 inpt-reset label-shdw inpt-fcs-shdw" type="search" name="search" placeholder="Type A Keyword">
+                    </div>
+                    <div class="icons ds-flex align-c">
+                        <span class="pos-relative notifi colr-prim-drk">
+                            <i class="fa-regular fa-bell fa-lg bell"></i>
+                        </span>
+                        <img class="ml-15" src="imgs/user-logo.png" alt="">
+                    </div>
+                </div>
+                <!-- End Head -->
+                <!-- Page Main Heading -->
+                <h1 class="pos-relative">Profile<span class="fw-bold colr-prim-drk">.</span></h1>
+                <!-- Start Profile Page Content -->
+                <div class="profile-page ds-flex f-wrap align-c m-20 gap-30">
+                    <!-- Start Information Overview  -->
+                    <div class="info-overview borad-10 bg-gl-1 ds-flex align-c w-full bx-shdw">
+                        <!-- Start Avatar Box  -->
+                        <div class="avatar-box txt-c p-20">
+                            <img class="borad-half mb-10 label-shdw" src="imgs/user-avatar.png" alt="">
+                            <h3 class="usen-name colr-prim-drk m-0">Ahmed Elkhdrawy</h3>
+                            <p class="colr-gdrk mt-10">Level 10</p>
+                            <div class="level-prog borad-6 pos-relative inset-shdw over-hid m-auto">
+                                <span class="pos-absolute left-0 top-0 h-full bg-grad-135 borad-6" style="width: 50%;"></span>
+                            </div>
+                            <div class="rating mt-10 mb-10">
+                                <i class="fa-solid fa-star colr-yellow fz-13"></i>
+                                <i class="fa-solid fa-star colr-yellow fz-13"></i>
+                                <i class="fa-solid fa-star colr-yellow fz-13"></i>
+                                <i class="fa-solid fa-star colr-yellow fz-13"></i>
+                                <i class="fa-solid fa-star colr-yellow fz-13"></i>
+                            </div>
+                            <p class="colr-gdrk fz-13 m-0">126 Rating</p>
+                        </div>
+                        <!-- End Avatar Box  -->
+                        <!-- Start Info Box  -->
+                        <div class="info-box w-full">
+                            <div class="general-info info-row p-20 ds-flex align-c f-wrap">
+                                <h4 class="colr-gdrk fz-15 m-0 w-full fw-norm" >General Information</h4>
+                                <div class="fz-14">
+                                    <span class="colr-gdrk">Full Name :</span>
+                                    <span>Ahmed Elkhdrawy</span>
+                                </div>
+                                <div class="fz-14">
+                                    <span class="colr-gdrk">Gender :</span>
+                                    <span>Male</span>
+                                </div>
+                                <div class="fz-14">
+                                    <span class="colr-gdrk">Country :</span>
+                                    <span>Egypt</span>
+                                </div>
+                                <div class="toggle w-full">
+                                    <label>
+                                        <input class="toggle-checkbox" type="checkbox" checked >
+                                        <div class="toggle-switch label-shdw"></div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="personal-info info-row p-20 ds-flex align-c f-wrap">
+                                <h4 class="colr-gdrk fz-15 m-0 w-full fw-norm" >Personal Information</h4>
+                                <div class="fz-14">
+                                    <span class="colr-gdrk">Email :</span>
+                                    <span>aelkhdrawy@gmail.com</span>
+                                </div>
+                                <div class="fz-14">
+                                    <span class="colr-gdrk">phone :</span>
+                                    <span>+20 106 5316 350</span>
+                                </div>
+                                <div class="fz-14">
+                                    <span class="colr-gdrk">D.F.B :</span>
+                                    <span>01 / 01 / 1996</span>
+                                </div>
+                                <div class="toggle w-full">
+                                    <label>
+                                        <input class="toggle-checkbox" type="checkbox" checked >
+                                        <div class="toggle-switch label-shdw"></div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="jop-info info-row p-20 ds-flex align-c f-wrap">
+                                <h4 class="colr-gdrk fz-15 m-0 w-full fw-norm" >Job Information</h4>
+                                <div class="fz-14">
+                                    <span class="colr-gdrk">Title :</span>
+                                    <span>Front-End Designer</span>
+                                </div>
+                                <div class="fz-14">
+                                    <span class="colr-gdrk">Programming Language :</span>
+                                    <span>Python</span>
+                                </div>
+                                <div class="fz-14">
+                                    <span class="colr-gdrk">Years Of Experience :</span>
+                                    <span>5+</span>
+                                </div>
+                                <div class="toggle w-full">
+                                    <label>
+                                        <input class="toggle-checkbox" type="checkbox" checked >
+                                        <div class="toggle-switch label-shdw"></div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="bill-info info-row p-20 ds-flex align-c f-wrap">
+                                <h4 class="colr-gdrk fz-15 m-0 w-full fw-norm" >Billing Information</h4>
+                                <div class="fz-14">
+                                    <span class="colr-gdrk">Payment Method :</span>
+                                    <span>Paypal</span>
+                                </div>
+                                <div class="fz-14">
+                                    <span class="colr-gdrk">Email :</span>
+                                    <span>aelkhdrawy@gmail.com</span>
+                                </div>
+                                <div class="fz-14">
+                                    <span class="colr-gdrk">Subscription :</span>
+                                    <span>Monthly</span>
+                                </div>
+                                <div class="toggle w-full">
+                                    <label>
+                                        <input class="toggle-checkbox" type="checkbox" checked >
+                                        <div class="toggle-switch label-shdw"></div>
+                                    </label>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- End Info Box  -->
+                    </div>
+                    <!-- End Information Overview -->
+                    <!-- Start Other Data -->
+                    <div class="other-data w-full ds-flex f-wrap gap-20 direc-col-mob">
+                        <!-- Start My Skills Widget -->
+                        <div class="my-skill-widg p-20 borad-10 bg-gl-1 flex-1 bx-shdw">
+                            <h2 class="colr-prim-drk m-0 mb-10">My Skills</h2>
+                            <p class="colr-gdrk mb-20">Complete Skills List</p>
+                            <ul class="m-0 txt-c-mob">
+                                <li class="skill-row w-full">
+                                    <span>HTML</span>
+                                    <span>Pugjs</span>
+                                    <span>HAML</span>
+                                </li>
+                                <li class="skill-row w-full">
+                                    <span>SCC</span>
+                                    <span>SASS</span>
+                                    <span>Stylus</span>
+                                </li>
+                                <li class="skill-row w-full">
+                                    <span>JavaScript</span>
+                                    <span>TypeScript</span>
+                                </li>
+                                <li class="skill-row w-full">
+                                    <span>Vuejs</span>
+                                    <span>Reactjs</span>
+                                </li>
+                                <li class="skill-row w-full">
+                                    <span>Jest</span>
+                                    <span>Jasmine</span>
+                                </li>
+                                <li class="skill-row w-full">
+                                    <span>PHP</span>
+                                    <span>Laravel</span>
+                                </li>
+                                <li class="skill-row w-full">
+                                    <span>Python</span>
+                                    <span>Django</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- End My Skills Widget -->
+                        <!-- Start Latest Activities Widget -->
+                        <div class="latest-activity-widg p-20 borad-10 bg-gl-1 flex-2 bx-shdw">
+                            <h2 class="colr-prim-drk m-0 mb-10">Latest Activities</h2>
+                            <p class="colr-gdrk mt-5 mb-20 fz-15">Latest Activities Done By The User</p>
+                            <div class="activity betwn-flex txt-c-mob">
+                                <img class="mr-15 borad-half" src="imgs/activity-01.png" alt="">
+                                <div class="info flex-1">
+                                    <span class="colr-prim-drk ds-blk mb-10 fw-bold">Store</span>
+                                    <span class="colr-gdrk">Bought The Mastering Python Course</span>
+                                </div>
+                                <div class="date txt-e">
+                                    <span class="colr-prim-drk ds-blk mb-10 fw-bold">18:10</span>
+                                    <span class="colr-gdrk">Yasterday</span>
+                                </div>
+                            </div>
+                            <div class="activity betwn-flex txt-c-mob">
+                                <img class="mr-15 borad-half" src="imgs/activity-02.png" alt="">
+                                <div class="info flex-1">
+                                    <span class="colr-prim-drk ds-blk mb-10 fw-bold">Academy</span>
+                                    <span class="colr-gdrk">Got The PHP Certificate</span>
+                                </div>
+                                <div class="date txt-e">
+                                    <span class="colr-prim-drk ds-blk mb-10 fw-bold">16:05</span>
+                                    <span class="colr-gdrk">Yasterday</span>
+                                </div>
+                            </div>
+                            <div class="activity betwn-flex txt-c-mob">
+                                <img class="mr-15 borad-half" src="imgs/activity-03.png" alt="">
+                                <div class="info flex-1">
+                                    <span class="colr-prim-drk ds-blk mb-10 fw-bold">Badges</span>
+                                    <span class="colr-gdrk">Unlocked The 10 Skills Badge</span>
+                                </div>
+                                <div class="date txt-e">
+                                    <span class="colr-prim-drk ds-blk mb-10 fw-bold">14:30</span>
+                                    <span class="colr-gdrk">Yasterday</span>
+                                </div>
+                            </div>
+                            <div class="activity betwn-flex txt-c-mob">
+                                <img class="mr-15 borad-half" src="imgs/activity-01.png" alt="">
+                                <div class="info flex-1">
+                                    <span class="colr-prim-drk ds-blk mb-10 fw-bold">Store</span>
+                                    <span class="colr-gdrk">Bought The Typescript Course</span>
+                                </div>
+                                <div class="date txt-e">
+                                    <span class="colr-prim-drk ds-blk mb-10 fw-bold">01:40</span>
+                                    <span class="colr-gdrk">Yasterday</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Latest Activities Widget -->
+                    </div>
+                    <!-- End Other Data -->
+                </div>
+                <!-- End Profile Page Content -->
+            </div>
+            <!-- End Content -->
+        </div>
+        <!-- End Page -->
+    </body>
+</html>
